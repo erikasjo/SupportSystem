@@ -1,0 +1,177 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+}
+
+.app {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* HEADER */
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  margin: 0 0 10px;
+  font-size: 2.5rem;
+  color: #60a5fa;
+}
+
+.header p {
+  color: #94a3b8;
+}
+
+/* BOXAR */
+.form-section,
+.filter-section {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 14px;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+/* FORM */
+.ticket-form {
+  display: grid;
+  gap: 12px;
+}
+
+.ticket-form input,
+.ticket-form select,
+.ticket-form textarea {
+  padding: 12px;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  background: #0f172a;
+  color: white;
+}
+
+.ticket-form input:focus,
+.ticket-form select:focus,
+.ticket-form textarea:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+/* KNAPPAR */
+.ticket-form button {
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #3b82f6;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.ticket-form button:hover {
+  background: #2563eb;
+}
+
+/* FILTER */
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filter-buttons button {
+  padding: 10px 14px;
+  border-radius: 10px;
+  border: none;
+  background: #334155;
+  color: white;
+  cursor: pointer;
+}
+
+.filter-buttons button:hover {
+  background: #475569;
+}
+
+/* TICKETS */
+.ticket-list {
+  display: grid;
+  gap: 16px;
+}
+
+.ticket-card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.ticket-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* STATUS */
+.status {
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+.status.open {
+  background: #7f1d1d;
+  color: #fecaca;
+}
+
+.status.in-progress {
+  background: #78350f;
+  color: #fde68a;
+}
+
+.status.solved {
+  background: #064e3b;
+  color: #bbf7d0;
+}
+
+/* INFO */
+.ticket-info {
+  margin-top: 10px;
+  color: #cbd5f5;
+}
+
+/* ACTIONS */
+.ticket-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.ticket-actions button {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #334155;
+  color: white;
+  cursor: pointer;
+}
+
+.ticket-actions button:hover {
+  background: #475569;
+}
+
+.ticket-actions .delete-btn {
+  background: #dc2626;
+}
+
+.ticket-actions .delete-btn:hover {
+  background: #b91c1c;
+}
